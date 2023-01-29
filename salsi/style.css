@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  grid-template-columns:2fr 4fr 2fr;
+  grid-gap: 1rem;
+  
+}
+
+.container div {
+    background-color: #ddd;
+    padding: 2rem;
+}
+
+.container div:nth-child(odd) {
+    background-color: #eee;
+}
+
+.box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+.box2 {
+    grid-column:3;
+    grid-row: 1/4;
+    border: purple 1px solid;
+}
+.box3 {
+    grid-column:1;
+    grid-row: 2/4;
+    border: purple 1px solid;
+    
+}
+.box4 {
+    
+    
+}
+.box5 {
+    grid-column: 1/4;
+}
+h1 {
+  text-align: center;  
+}

@@ -1,0 +1,45 @@
+div {
+    color: white;
+    width: 100px;
+    height: 100px;
+    background: rgb(108, 116, 122);
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+.trans1 {
+    
+    transition: width 2s, height 4s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+  }
+  .trans1:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+  .trans2 {
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+  .trans2:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+  .trans3 {
+    z-index: 1;
+  }
+
+  .inner {
+    background-color: rgb(205, 38, 163);
+    width: 100%;
+    height: 0;
+    z-index: 3;
+    transition: height 2s;
+
+  }
+  .trans3:hover .inner {
+    height: 100px;
+  }
+
+ 

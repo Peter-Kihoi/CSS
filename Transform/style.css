@@ -1,0 +1,53 @@
+.transform {
+    display: flex;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 2px;
+}
+.main {
+    background-color: rgb(93, 70, 70);
+    position: relative;
+}
+.child {
+
+    background-color: rgb(236, 228, 228);
+    margin-right: 20px;
+    position: absolute;
+    top: 6px;
+    text-align: center;
+}
+
+.tanslate-child {
+    transform: translate(20px, 30px);
+}
+
+.rotate-child {
+    transform: rotate(25deg);
+}
+
+.scale-child {
+    opacity: 0.5;
+    transform: scale(1.5,2);
+}
+
+.skewX-child {
+    transform: skewX(20deg);
+}
+.skewY-child {
+    transform: skewY(20deg);
+}
+.skew-child {
+    transform: skew(20deg, 10deg);
+}
+.matrix-child {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
